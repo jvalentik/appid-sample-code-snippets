@@ -1,12 +1,12 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: AngularNodeSample SPA
-    before: cd angular-node-sample/cloudaland-ui
+    before: cd angular-node-sample/cloudalnd-ui
     init: yarn install
     command: yarn run start
 
   - name: AngularNodeSample Backend
-    before: cd angular-node-sample/cloudaland-bacckend
+    before: cd angular-node-sample/cloudland-bacckend
     init: yarn install
     command: yarn run start
 
@@ -15,4 +15,3 @@ ports:
   - port: 4200
     onOpen: open-preview
   - port: 3000
-  
