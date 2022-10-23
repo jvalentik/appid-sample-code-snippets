@@ -1,4 +1,3 @@
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: AngularNodeSample SPA
     before: cd angular-node-sample/cloudland-ui
@@ -12,6 +11,10 @@ tasks:
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 4200
-    onOpen: open-preview
-  - port: 3000
+  - name: SPA
+    port: 4200
+    onOpen: open-browser
+
+  - name: NodeJS
+    port: 3000
+    onOpen: notify
