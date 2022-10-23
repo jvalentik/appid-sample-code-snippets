@@ -1,12 +1,12 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: AngularNodeSample SPA
-    before: cd angular-node-sample/cloudalnd-ui
+    before: cd angular-node-sample/cloudland-ui
     init: yarn install
     command: yarn run start
 
   - name: AngularNodeSample Backend
-    before: cd angular-node-sample/cloudland-bacckend
+    before: cd angular-node-sample/cloudland-backend
     init: yarn install
     command: yarn run start
 
